@@ -2,13 +2,12 @@ import mongoose from 'mongoose';
 
 class MongoManager {
 
-    #config;
     
     constructor(config){
-        this.#config = config;
+        this._config = config;
     }
     getConnectionURL(){
-        return this.#config;
+        return this._config;
     }
 
     isConnected(){

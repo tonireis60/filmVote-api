@@ -26,4 +26,4 @@ class MongoManager {
 
 }
 
-export default new MongoManager(process.env.MONGODB_URI);
+export default new MongoManager(mongodb+srv://<username>:<password>@cluster0-vi9uq.mongodb.net/test?retryWrites=true&w=majority);

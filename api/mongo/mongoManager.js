@@ -25,4 +25,4 @@ class MongoManager {
 
 }
 
-export default new MongoManager("mongodb+srv://toniReis:pinkfloyd1883@cluster0-vi9uq.mongodb.net/filmVoteData?retryWrites=true&w=majority");
+export default new MongoManager(process.env.MONGODB_URI);
